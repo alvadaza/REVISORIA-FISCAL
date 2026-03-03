@@ -5,37 +5,37 @@ const items = [
   {
     id: "formacion",
     label: "Formación",
-    icon: "/image/certificate-concept.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508696/zarate/certificate-concept_nqhjts.png",
     angle: 300,
   },
   {
     id: "revisoria",
     label: "Revisoría",
-    icon: "/image/revisoria.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508660/zarate/revisoria_jn0kxl.png",
     angle: 240,
   },
   {
     id: "auditoria",
     label: "Auditoría",
-    icon: "/image/auditoria.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508617/zarate/auditoria_awozlw.png",
     angle: 180,
   },
   {
     id: "seguimientoObra",
     label: "Seguimiento de Obra",
-    icon: "/image/avance-de-obra-1024x1024.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png",
     angle: 120,
   },
   {
     id: "hojadevida",
     label: "Hoja de Vida",
-    icon: "/image/hoja-vida.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508510/zarate/hoja-vida_bcfjs1.png",
     angle: 60,
   },
   {
     id: "certificados-ia",
     label: "Certificaciones-IAS",
-    icon: "/public/image/IAS.jpg",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508410/zarate/IAS_gfndjy.jpg",
     angle: 0,
   },
 ];
