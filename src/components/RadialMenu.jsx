@@ -23,7 +23,7 @@ const items = [
   {
     id: "seguimientoObra",
     label: "Seguimiento de Obra",
-    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508569/zarate/avance-de-obra-1024x1024_faqgxf.png",
     angle: 120,
   },
   {
