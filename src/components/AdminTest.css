@@ -1,0 +1,122 @@
+.admin-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background: #0a0d14;
+  color: #e5e7eb;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #111827;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #4a5568;
+  background: #1a202c;
+  color: #e5e7eb;
+}
+
+.auth-form button {
+  padding: 1rem;
+  background: #60a5fa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+.form {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #4a5568;
+  background: #1a202c;
+  color: #e5e7eb;
+}
+
+.form button {
+  padding: 1rem 2rem;
+  background: #4ade80;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.item-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item-row input {
+  flex: 1;
+}
+
+.item-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.preview {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.small-preview {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.list-item {
+  background: #1a202c;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.list-item button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #60a5fa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.list-item button:last-child {
+  background: #ff6b6b;
+}

@@ -1,0 +1,145 @@
+:root {
+  --bg-main: #0a0d14;
+  --card: #111827;
+  --card-hover: #172038;
+  --accent: #60a5fa;
+  --accent-glow: rgba(96, 165, 250, 0.22);
+  --green: #4ade80;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --radius: 16px;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  --transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.obras-container {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+.obras-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+.obra-item video {
+  pointer-events: none; /* 🔥 evita que el video capture el click */
+}
+
+.obras-masonry {
+  column-count: 4;
+  column-gap: 1.4rem;
+}
+
+.obra-item {
+  break-inside: avoid;
+  margin-bottom: 1.4rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.obra-item img,
+.obra-item video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* =========================
+   MASONRY (COLUMNAS)
+========================= */
+.obras-masonry {
+  column-count: 4;
+  column-gap: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+  .obras-masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .obras-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .obras-masonry {
+    column-count: 1;
+  }
+}
+
+/* =========================
+   ITEM
+========================= */
+.obra-item {
+  break-inside: avoid;
+  margin-bottom: 1.4rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.obra-item img,
+.obra-item video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.obra-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 18, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   MEDIA FULL
+========================= */
+.obra-full {
+  width: 95vw;
+  height: 95vh;
+  max-width: none;
+  max-height: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.8);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.obra-full {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 0;
+}
+.obra-full img {
+  width: 50%;
+  height: auto;
+}

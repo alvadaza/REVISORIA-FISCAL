@@ -1,0 +1,263 @@
+.revisoria {
+  min-height: 100vh;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 0;
+  margin: 0;
+}
+
+.revisoria-header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+  padding: 1px 22px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 70px;
+}
+
+.revisoria-header p {
+  margin-top: -15px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.revisoria-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+.revisoria-card {
+  position: relative;
+  background: #1b242c;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.revisoria-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: transform 0.4s ease;
+}
+
+.revisoria-card:hover img {
+  transform: scale(1.05);
+}
+
+.revisoria-card.featured {
+  grid-row: span 2;
+}
+
+.revisoria-card.featured img {
+  height: 100%;
+}
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.revisoria-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 20, 0.92);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.revisoria-full {
+  background: #111;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.revisoria-full img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.revisoria-full .content {
+  padding: 40px;
+}
+
+.revisoria-full h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.revisoria-full ul {
+  padding-left: 20px;
+}
+
+.revisoria-full li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.revisoria-full button {
+  margin-top: 30px;
+  background: #4f6b5b;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .revisoria {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .revisoria-header h1 {
+    font-size: 2.6rem;
+    margin-top: 50px;
+  }
+
+  .revisoria-header p {
+    font-size: 1rem;
+  }
+
+  .revisoria-grid {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 25px;
+  }
+
+  .revisoria-card img {
+    height: 220px;
+  }
+
+  .revisoria-full img {
+    height: 280px;
+  }
+
+  .revisoria-full .content {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .revisoria-header h1 {
+    margin-top: 80px;
+  }
+  .revisoria {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .revisoria-header h1 {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    margin-top: 40px;
+  }
+
+  .revisoria-header p {
+    font-size: 0.95rem;
+    margin-top: -10px;
+  }
+
+  .revisoria-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .revisoria-card.featured {
+    grid-row: auto;
+  }
+
+  .revisoria-card img {
+    height: 200px;
+  }
+
+  .card-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .revisoria-full {
+    width: 95%;
+  }
+
+  .revisoria-full img {
+    height: 240px;
+  }
+
+  .revisoria-full h2 {
+    font-size: 1.6rem;
+  }
+
+  .revisoria-full .content {
+    padding: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .revisoria-header h1 {
+    margin-top: 90px;
+  }
+  .revisoria {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .revisoria-header h1 {
+    font-size: 1.8rem;
+    padding: 4px 14px;
+  }
+
+  .revisoria-header p {
+    font-size: 0.9rem;
+  }
+
+  .revisoria-card img {
+    height: 180px;
+  }
+
+  .card-overlay {
+    padding: 14px;
+  }
+
+  .card-overlay h3 {
+    font-size: 0.95rem;
+  }
+
+  .revisoria-full img {
+    height: 200px;
+  }
+
+  .revisoria-full .content {
+    padding: 20px;
+  }
+
+  .revisoria-full h2 {
+    font-size: 1.4rem;
+  }
+
+  .revisoria-full button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .revisoria-header h1 {
+    margin-top: 90px; /* ajusta según lo veas mejor */
+    font-size: 1.9rem; /* opcional para que no se coma la pantalla */
+  }
+}

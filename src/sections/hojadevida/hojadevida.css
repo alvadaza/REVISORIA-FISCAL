@@ -1,0 +1,270 @@
+:root {
+  --bg-main: #0a0d14;
+  --card: #111827;
+  --card-hover: #172038;
+  --accent: #60a5fa;
+  --accent-glow: rgba(96, 165, 250, 0.22);
+  --green: #4ade80;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --radius: 16px;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  --transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 30%, #1a2238 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, #0f1a2a 0%, transparent 65%),
+    var(--bg-main);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.hoja-container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 8rem;
+}
+
+.hoja-title {
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(90deg, #a5b4fc, #60a5fa 50%, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  letter-spacing: -1px;
+}
+
+/* Certificados */
+.iconos-certificados {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.iconos-certificados h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.certificados-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.icono {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.icono:hover {
+  transform: translateY(-12px) scale(1.08);
+  box-shadow: 0 30px 70px var(--accent-glow);
+}
+
+/* Masonry */
+.container-hv {
+  column-count: 1;
+  column-gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .container-hv {
+    column-count: 2;
+  }
+}
+@media (min-width: 980px) {
+  .container-hv {
+    column-count: 3;
+  }
+}
+@media (min-width: 1400px) {
+  .container-hv {
+    column-count: 4;
+  }
+}
+
+.card {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 90px var(--accent-glow);
+}
+
+/* Sobre mí pequeña */
+.hv-about {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.8rem;
+  align-items: start;
+}
+
+.hv-about img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.resumen {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Experiencia pequeña (sin imagen) */
+.hv-experience h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.experiencia-item {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.separador {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 1.2rem 0;
+}
+
+.footer-card {
+  text-align: right;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.footer-icon {
+  height: 40px;
+}
+
+/* Overlay y expanded */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 18, 0.96);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.expanded-card,
+.certificado-full {
+  width: 92vw;
+  max-width: 1150px;
+  max-height: 94vh;
+  overflow-y: auto;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 40px 140px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+
+.certificado-full {
+  text-align: center;
+}
+
+.certificado-full img {
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagen grande en expanded */
+.experience-full-image {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1rem auto 2.5rem;
+  display: block;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+}
+
+/* Título expanded */
+.exp-title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+/* Línea verde */
+.green-line {
+  height: 5px;
+  background: var(--green);
+  width: 140px;
+  margin: 0 auto 2.5rem;
+  border-radius: 4px;
+}
+
+/* Texto en expanded */
+.content-expanded .experiencia-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.4rem 1.8rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--green);
+  margin: 1.2rem 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Botón cerrar */
+.close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  background: var(--accent);
+  transform: scale(1.12) rotate(90deg);
+}

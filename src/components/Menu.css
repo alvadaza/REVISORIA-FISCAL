@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  top: 24px;
+  left: 40%;
+  transform: translateX(50%);
+  display: flex;
+  gap: 24px;
+  z-index: 1000;
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.menu button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
