@@ -107,7 +107,7 @@ export default function HojaDeVida() {
               contenido: (
                 <>
                   <img
-                    src="/image/perfil_zarate.png"
+                    src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png"
                     alt="Perfil profesional"
                     className="experience-full-image"
                   />

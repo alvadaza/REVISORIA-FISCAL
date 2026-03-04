@@ -105,7 +105,7 @@ export default function MainView({ goTo }) {
         {activeTab === "especializacion" && (
           <div className="info-content">
             <img
-              src="/image/propuestadetrabajo.jpg"
+              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
               alt="magister"
               className="magister-imagen"
             />
@@ -123,7 +123,7 @@ export default function MainView({ goTo }) {
         {activeTab === "magister" && (
           <div className="info-content">
             <img
-              src="/image/propuestadetrabajo.jpg"
+              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
               alt="magister"
               className="magister-imagen"
             />
@@ -148,7 +148,7 @@ export default function MainView({ goTo }) {
         {activeTab === "seminarios" && (
           <div className="info-content">
             <img
-              src="/image/propuestadetrabajo.jpg"
+              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
               alt="magister"
               className="magister-imagen"
             />

@@ -62,7 +62,7 @@ export default function Home({ onSelect }) {
         {/* Centro: imagen + radial */}
         <div className="home-center">
           <motion.img
-            src="/image/free-vector.png"
+            src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580244/zarate/free-vector_lizm5g.png"
             alt="Proceso Revisoría Fiscal"
             className="home-image"
             initial={{ scale: 0.9, opacity: 0 }}

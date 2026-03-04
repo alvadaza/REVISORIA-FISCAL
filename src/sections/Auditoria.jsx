@@ -7,7 +7,8 @@ const auditorias = [
   {
     id: 1,
     titulo: "Auditoría Administrativa",
-    imagen: "/image/istockphoto-845914470-2048x2048.jpg",
+    imagen:
+      "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772546867/zarate/istockphoto-845914470-2048x2048_zyo7tb.jpg",
     descripcion:
       "Evaluación que determina la eficiencia, cumplimiento de sus objetivos, planes y programas, estructura organica, procedimientos y controles, el personal, las instalaciones, medio en el cual se desarrolla, operación y el ahorro en costos. Se llevará a cabo mediante la revisión de:.",
     lista: [
@@ -27,7 +28,8 @@ const auditorias = [
   {
     id: 2,
     titulo: "Auditoría de Control Interno",
-    imagen: "/image/marco-legal.png",
+    imagen:
+      "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772546897/zarate/marco-legal_fajfw1.png",
     descripcion:
       "Determina si existen y son adecuadas las medidas de control interno, de conversación y custodia de los bienes de la unidad residencial. Se evaluan los Siguientes Aspectos: ",
     lista: [
@@ -43,7 +45,8 @@ const auditorias = [
   {
     id: 3,
     titulo: "Auditoría Operacional",
-    imagen: "/image/istockphoto-845914470-2048x2048.jpg",
+    imagen:
+      "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580940/zarate/istockphoto-510132377-2048x2048_o6fx9j.jpg",
     descripcion:
       "evaluacion de la planeacíon, organización, dirección y control por procesos operativos, según los criterios de: economía, eficiencia, efectividad u equidad. Se evaluan los siguientes aspectos:",
     lista: [
@@ -59,7 +62,8 @@ const auditorias = [
   {
     id: 4,
     titulo: "Auditoría Financiera",
-    imagen: "/image/avance-de-obra-1024x1024.png",
+    imagen:
+      "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508569/zarate/avance-de-obra-1024x1024_faqgxf.png",
     descripcion:
       "Revisión e inspeccion de la información contable, financiera y tributaria. Se evaluan los siguientes aspectos:",
     lista: [

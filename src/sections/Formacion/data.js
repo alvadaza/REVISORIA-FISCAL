@@ -1,33 +1,15 @@
 export const diplomas = {
-  contador: ["/image/contador1.png", "/image/contador2.png"],
-  especializacion: ["/image/especializacion.png"],
-  magister: ["/image/magister.png"],
-  seminarios: ["/public/image/semminario.png"],
+  contador: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543675/zarate/contador1_wic6we.png",
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543675/zarate/contador2_c22q0t.png",
+  ],
+  especializacion: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543676/zarate/especializacion_tsukz3.png",
+  ],
+  magister: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543676/zarate/magister_njggqt.png",
+  ],
+  seminarios: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543678/zarate/semminario_fnrkbt.png",
+  ],
 };
-
-export const certificados = [
-  {
-    id: "contador",
-    titulo: "Contador Público",
-    categoria: "formacion",
-    imagen: "/certificados/contador.jpg",
-  },
-  {
-    id: "especializacion",
-    titulo: "Especialización",
-    categoria: "especializacion",
-    imagen: "/certificados/especializacion.jpg",
-  },
-  {
-    id: "magister",
-    titulo: "Magíster",
-    categoria: "magister",
-    imagen: "/certificados/magister.jpg",
-  },
-  {
-    id: "seminario",
-    titulo: "Seminario",
-    categoria: "seminario",
-    imagen: "/certificados/seminario.jpg",
-  },
-];

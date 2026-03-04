@@ -3,22 +3,78 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SeguimientoObras.css";
 
 const media = [
-  { id: 1, tipo: "img", src: "/image/OBRA1.png" },
-  { id: 2, tipo: "img", src: "/image/OBRA2.png" },
+  {
+    id: 1,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580686/zarate/OBRA1_mmpgy5.png",
+  },
+  {
+    id: 2,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580687/zarate/OBRA2_tjvhsl.png",
+  },
   // { id: 3, tipo: "video", src: "/video/obra1.mp4" },
-  { id: 4, tipo: "img", src: "/image/OBRA4.png" },
+  {
+    id: 4,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580431/zarate/OBRA4_ghwomr.png",
+  },
   // { id: 5, tipo: "video", src: "/video/obra2.mp4" },
-  { id: 5, tipo: "img", src: "/image/OBRA5.png" },
-  { id: 6, tipo: "img", src: "/image/OBRA6.png" },
-  { id: 7, tipo: "img", src: "/image/OBRA7.png" },
-  { id: 8, tipo: "img", src: "/image/OBRA8.png" },
-  { id: 9, tipo: "img", src: "/image/OBRA9.png" },
-  { id: 10, tipo: "img", src: "/image/OBRA10.png" },
-  { id: 11, tipo: "img", src: "/image/OBRA11.png" },
-  { id: 12, tipo: "img", src: "/image/OBRA12.png" },
-  { id: 13, tipo: "img", src: "/image/OBRA13.png" },
-  { id: 14, tipo: "img", src: "/image/OBRA14.png" },
-  { id: 15, tipo: "img", src: "/image/OBRA15.png" },
+  {
+    id: 5,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580636/zarate/OBRA5_lgw3r1.png",
+  },
+  {
+    id: 6,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580432/zarate/OBRA6_yp35b3.png",
+  },
+  {
+    id: 7,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580432/zarate/OBRA7_hw497y.png",
+  },
+  {
+    id: 8,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA8_g6uyjo.png",
+  },
+  {
+    id: 9,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA9_ozfxqw.png",
+  },
+  {
+    id: 10,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA10_g8onpe.png",
+  },
+  {
+    id: 11,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580434/zarate/OBRA11_h7lorl.png",
+  },
+  {
+    id: 12,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580429/zarate/OBRA12_zbasu8.png",
+  },
+  {
+    id: 13,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA13_aapauu.png",
+  },
+  {
+    id: 14,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA14_orj4qr.png",
+  },
+  {
+    id: 15,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA15_samyhk.png",
+  },
 ];
 
 export default function SeguimientoObras() {
