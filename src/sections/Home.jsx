@@ -54,9 +54,33 @@ export default function Home({ onSelect }) {
         >
           <h1>{tituloPrincipal}</h1>
           <h2>REVISORÍA FISCAL</h2>
-          <p>
-            Control, transparencia y confianza en los procesos empresariales.
+          <p className="hero-description">
+            Control, Transparencia y Cumplimiento Normativo para tu Empresa.
           </p>
+
+          <p className="hero-description">
+            Garantizo la correcta aplicación de las Normas de Información
+            Financiera (NIIF), el cumplimiento tributario y la protección de tus
+            estados financieros.
+          </p>
+
+          <p className="hero-cta-text">
+            ¿Necesitas Revisor Fiscal en Bogotá?
+            <strong> Contáctame hoy</strong> y asegura la tranquilidad de tu
+            empresa.
+          </p>
+
+          <div className="hero-buttons">
+            <motion.a
+              href="https://wa.me/573228080805"
+              className="btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+            >
+              Contactenos
+            </motion.a>
+          </div>
         </motion.div>
 
         {/* Centro: imagen + radial */}
