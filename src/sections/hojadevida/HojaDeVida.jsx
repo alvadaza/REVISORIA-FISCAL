@@ -70,7 +70,7 @@ export default function HojaDeVida() {
 
   return (
     <section className="hoja-container">
-      <h1 className="hoja-title">Hoja de Vida</h1>
+      <h1 className="hoja-title">Experiencia Laboral</h1>
 
       {/* Certificados desde Supabase */}
       <div className="iconos-certificados">
