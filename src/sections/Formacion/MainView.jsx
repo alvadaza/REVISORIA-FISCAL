@@ -21,7 +21,7 @@ export default function MainView({ goTo }) {
         animate={{ opacity: 1, y: 0 }}
       >
         <img
-          src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
+          src="https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1772469572/zarate/perfil_zarate_cmbnf7.png"
           alt="perfil"
           className="perfil-img"
         />
