@@ -78,7 +78,7 @@ export default function Home({ onSelect }) {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
             >
-              Contactenos
+              Contactame
             </motion.a>
           </div>
         </motion.div>
