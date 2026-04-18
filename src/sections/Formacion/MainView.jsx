@@ -134,7 +134,7 @@ export default function MainView({ goTo }) {
                   <li>NIIF - IFRS</li>
                 </ul>
 
-                <button onClick={() => goTo("diplomado")}>Ver diplomas</button>
+                <button onClick={() => goTo("seminarios")}>Ver diplomas</button>
               </>
             )}
             {activeTab === "diplomado" && (
@@ -149,7 +149,7 @@ export default function MainView({ goTo }) {
                   </li>
                 </ul>
 
-                <button onClick={() => goTo("taller")}>Ver diplomas</button>
+                <button onClick={() => goTo("diplomado")}>Ver diplomas</button>
               </>
             )}
             {activeTab === "taller" && (
