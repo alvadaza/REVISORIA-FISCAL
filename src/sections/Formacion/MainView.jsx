@@ -159,8 +159,7 @@ export default function MainView({ goTo }) {
 
                 <ul>
                   <li>
-                    Sistema de Gestión Seguridad y Salud en el Trabajo - San
-                    Jose Bolivar
+                    Certificado de Seguridad y Salud en el Trabajo - U. San Jose
                   </li>
                 </ul>
 
