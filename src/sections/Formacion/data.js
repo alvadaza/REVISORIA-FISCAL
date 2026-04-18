@@ -11,5 +11,13 @@ export const diplomas = {
   ],
   seminarios: [
     "https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776471834/zarate/seminario_anin_lcgkkt.png",
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776473592/zarate/certificado_zlamkg.png",
+  ],
+  diplomado: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776478038/zarate/DIPLOMADO_wmrigu.png",
+  ],
+
+  taller: [
+    "https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776478373/zarate/VDxAE_vztr5t.jpg",
   ],
 };

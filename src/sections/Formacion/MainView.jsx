@@ -21,7 +21,7 @@ export default function MainView({ goTo }) {
         animate={{ opacity: 1, y: 0 }}
       >
         <img
-          src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png"
+          src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
           alt="perfil"
           className="perfil-img"
         />
@@ -94,6 +94,8 @@ export default function MainView({ goTo }) {
             <button onClick={() => setActiveTab("seminarios")}>
               Seminarios
             </button>
+            <button onClick={() => setActiveTab("diplomado")}>Diplomado</button>
+            <button onClick={() => setActiveTab("taller")}>Taller</button>
           </div>
 
           <div className="info-content">
@@ -128,11 +130,41 @@ export default function MainView({ goTo }) {
                 <h3>Seminarios</h3>
 
                 <ul>
-                  <li>Negocios en China</li>
+                  <li>Actualización Tributaria y Software Legal</li>
                   <li>NIIF - IFRS</li>
                 </ul>
 
-                <button onClick={() => goTo("seminarios")}>Ver diplomas</button>
+                <button onClick={() => goTo("diplomado")}>Ver diplomas</button>
+              </>
+            )}
+            {activeTab === "diplomado" && (
+              <>
+                <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
+                <h3>Diplomado</h3>
+
+                <ul>
+                  <li>
+                    Diplomado en Propiedad Horizontal - Constructora Seguros
+                    Bolivar
+                  </li>
+                </ul>
+
+                <button onClick={() => goTo("taller")}>Ver diplomas</button>
+              </>
+            )}
+            {activeTab === "taller" && (
+              <>
+                <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
+                <h3>Taller</h3>
+
+                <ul>
+                  <li>
+                    Sistema de Gestión Seguridad y Salud en el Trabajo - San
+                    Jose Bolivar
+                  </li>
+                </ul>
+
+                <button onClick={() => goTo("taller")}>Ver diplomas</button>
               </>
             )}
           </div>
