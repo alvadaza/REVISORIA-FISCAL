@@ -14,7 +14,7 @@ export default function Home({ onSelect }) {
           .from("configuracion")
           .select("valor")
           .eq("clave", "titulo_principal")
-          .single(); // esperamos exactamente 1 fila
+          .single(); // esperamos exactamente 1 fila del tiitulo
 
         if (error) throw error;
 
@@ -86,7 +86,7 @@ export default function Home({ onSelect }) {
         {/* Centro: imagen + radial */}
         <div className="home-center">
           <motion.img
-            src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580244/zarate/free-vector_lizm5g.png"
+            src="https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776460539/zarate/ChatGPT_Image_17_abr_2026__04_14_02_p.m.-removebg-preview_owlqcx.png"
             alt="Proceso Revisoría Fiscal"
             className="home-image"
             initial={{ scale: 0.9, opacity: 0 }}

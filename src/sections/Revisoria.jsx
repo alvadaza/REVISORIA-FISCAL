@@ -8,47 +8,38 @@ const services = [
     title: "REVISOR FISCAL",
     image:
       "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580305/zarate/revisoriafiscal_qvmfzj.jpg",
-    description:
-      "Encargado de dictaminar los estados financieros y velar por el sistema de control interno.",
+
+    items: [
+      "El Revisor Fiscal deberá ejercer una vigilancia integral sobre la gestión administrativa, financiera y legal de la copropiedad.",
+      "Verifica que las operaciones se ajusten a la normatividad vigente, al reglamento de propiedad horizontal y a las decisiones de la Asamblea General y del Consejo de Administración.",
+      "Velar por el adecuado manejo de los recursos, evaluará el sistema de control interno, examinará y dictaminará los estados financieros, y reportará oportunamente cualquier irregularidad o situación relevante.",
+      "Actuando en todo momento con independencia, objetividad y responsabilidad profesional, sin incurrir en funciones administrativas o de coadministración.",
+    ],
   },
   {
     id: "propuesta-trabajo",
     title: "PROPUESTA DE TRABAJO",
     image:
       "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg",
+    description:
+      "Como Oferta Económica en contraprestación de mis servicios profesionales se ajustan al presupuesto aprobado en la reunión de Asamblea Ordinaria de Copropietarios. En aplicación de mis conocimientos técnicos, profesionales y experiencia como Revisor Fiscal, realizo los siguientes procedimientos en tres o cuatro asistencias presenciales y/o virtuales al mes y los días adicionales que se requieran para atender en cualquier momento presencial o virtual las necesidades o solicitudes de la administración, del Consejo de Administración, Convivencia, copropietarios y demás comités, si las circunstancias ameritan la intervención de la revisoría fiscal; desde luego las horas que se requieran. De igual manera dispongo tres horas cada cuatro meses para atender presencialmente o virtual a los copropietarios que soliciten atención de aclaraciones a los informes publicados en cartelera. (P.Q.R.S).",
     items: [
-      "1. Revisión mensual de los soportes por ingresos correspondientes al pago de las expensas de áreas comunes, como son entre otros: Administración, usufructo de salones comunales, áreas de parqueo comunales  y/o visitantes, multas y/o sanciones",
-      "2. Revisión mensual de los soportes de gastos pertinentes a la operación administrativa del conjunto residencial. (Vigilancia, administración, aseo, mantenimiento, contabilidad y demás gastos necesarios para el buen esarrollo y la convivencia de la unidad residencial. ",
-      "3. Revisión de los contratos laborales y por obras, derivados en cumplimiento de la ley, el reglamento, y las decisiones de la asamblea de copropietarios. ",
-      "4. Revisión de las certificaciones de mantenimiento y seguridad de ascensores, motobombas, tanques de agua, fumigaciones, extinguidores y demás elementos indispensables para el buen desarrollo y disfrute de la unidad residencial.",
-      "5. Revisión de las actas de asamblea y concejo de administración. ",
-      "6. Confirmación del pago de seguridad social de quienes presten un servicio a la copropiedad.",
-      "7. Velar por se cumpla la ley, las normas y el reglamento.",
-      "8. Asesorar la efectiva participación del comité de convivencia y los demás que se desprendan de las iniciativas de la asamblea, del consejo, y la administración, para el desarrollo, la convivencia, y la calidad de vida de los copropietarios. ",
-      "9. Revisar y auditar los registros contables y autenticar con mi firma los estados financieros de la Unidad Residencial. ",
-      "10. Dictaminar los estados financieros del respectivo periodo fiscal. ",
-      "11. Asistir y sugerir en el desarrollo de la asamblea ordinaria y/o extraordinaria en sus decisiones a que haya lugar en cumplimiento de las funciones de la Revisoría Fiscal, ajustado a la ley, la norma, el reglamento y las disposiciones de la asamblea. ",
-      "12. Adelantar los arqueos de caja a mi discrecionalidad y a solicitud del consejo de administración.",
-      "13. Revisar los presupuestos de ingresos y gastos. ",
-      "14. Revisión del estado de cartera. ",
-      "15. Asesorar a la asamblea de copropietarios en sus decisiones, que con ajuste a la ley y el reglamento así lo amerite.",
-      "16. Asistir desde el conocimiento técnico y profesional al consejo de administración.",
-      "17. Supervisar las actuaciones de la administración que se ajusten a la ley, las normas, y el reglamento de propiedad horizontal, en cumplimiento del mandato de la asamblea general de copropietarios.",
-      "18. Presentar un informe financiero mensual resumido de los resultados expresados en los estados financieros, (Estado de Situación financiera, Estado de resultados Integral, Balance de Prueba, Flujo de Efectivo, Conciliación Bancaria, Ejecución Presupuestal y Manejo de Caja Menor), con observaciones a la gestión de la administrativa y del concejo.",
-      "19. Asistir a las reuniones del consejo cuando así lo solicite y se requiera. ",
-      "20. Convocar a reuniones al concejo de administración, a la administración, y a asamblea extraordinaria de copropietarios cuando se requiera estrictamente necesario. ",
-      "21. Revisar el cumplimiento del pago de la póliza de áreas comunes. ",
-      "22. Revisar la existencia y manejo del fondo de imprevistos. ",
-      "23. Las demás acciones necesarias para el buen desarrollo, la sostenibilidad y convivencia de la copropiedad.  ",
+      "1. Vigilar que las operaciones que celebre o cumpla la administración se ajusten a las disposiciones legales, al reglamento de propiedad horizontal y a las decisiones de la Asamblea y del Consejo de Administración.",
+      "2. Velar por el adecuado manejo de los recursos financieros de la copropiedad, verificando que los ingresos, gastos, inversiones y pagos se encuentren debidamente soportados, registrados y autorizados.",
+      "3. Evaluar el sistema de control interno, emitiendo recomendaciones que contribuyan a su fortalecimiento y a la mitigación de riesgos.",
+      "4. Examinar y dictaminar los estados financieros de la copropiedad, de conformidad con las normas de contabilidad y de aseguramiento de la información vigentes en Colombia.",
+      "5. Informar oportunamente a la Asamblea General, al Consejo de Administración y, cuando sea necesario, a las autoridades competentes, sobre irregularidades o situaciones que puedan afectar la estabilidad financiera, jurídica o administrativa de la copropiedad.",
+      "6. Verificar el cumplimiento de las obligaciones legales de la copropiedad, incluyendo aquellas de carácter contable, tributario y administrativo.",
+      "7. Ejercer las demás funciones establecidas en la ley, especialmente en el Código de Comercio y en la Ley 675 de 2001, así como las que le sean asignadas por la Asamblea General dentro del marco legal.",
     ],
   },
   {
     id: "transparencia",
     title: "TRANSPARENCIA Y CONTROL",
     image:
-      "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580389/zarate/TRANSPARENCIAYCONTROL_vpdmdb.jpg",
+      "https://res.cloudinary.com/dl7kjajkv/image/upload/q_auto/f_auto/v1776467449/zarate/transparencia_imag-01_transparencia_ag1050.jpg",
     description:
-      "Aplicación de la Ley 675 de 2001, reglamento de propiedad horizontal y decisiones de la asamblea.",
+      "En cumplimiento de la ley 675 de 2001con relación a las funciones y objetivos de la Revisoría Fiscal, al igual, la ley 43 de 1990 y la ley 1314 de 2009 Normas Internacionales de Información Financiera NIIF. Me permito formalizar las actividades, procedimientos e informes de Revisoría Fiscal",
   },
 ];
 
@@ -109,14 +100,14 @@ export default function Revisoria() {
               <div className="content">
                 <h2>{active.title}</h2>
 
-                {active.items ? (
+                {active.description && <p>{active.description}</p>}
+
+                {active.items && (
                   <ul>
                     {active.items.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
-                ) : (
-                  <p>{active.description}</p>
                 )}
 
                 <button onClick={() => setActive(null)}>Cerrar</button>

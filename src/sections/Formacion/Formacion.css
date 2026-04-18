@@ -1,271 +1,161 @@
 .formacion-main {
-  position: relative;
   min-height: 100vh;
-  padding: 60px 80px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #1a2f3f 0%, #0f1e26 100%);
-}
-
-.formacion-main h1 {
-  display: inline-block;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #1a2f3f, #0f1e26);
   color: white;
-  font-size: 3.5rem;
-  font-weight: 800;
-  padding: 22px 40px;
-  border-radius: 4px;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  border-left: 4px solid #4f6b5b;
+  text-align: center;
 }
 
-/* Botón circular central */
+/* TITULO */
+.formacion-main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* SOBRE MI */
+.sobre-mi-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: #1f2a32;
+}
+
+.perfil-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* BOTÓN */
 .circle-button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 160px;
-  height: 160px;
+  margin: 20px auto;
+  display: block;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: #2d3740;
+  border: 2px solid #4f6b5b;
   color: white;
-  border: 3px solid #4f6b5b;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
   cursor: pointer;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-  z-index: 10;
-  transition: all 0.3s ease;
 }
 
-.circle-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-  background: #3d4a4f;
-  border-color: #6b8f7c;
+/* GRID */
+.formacion-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* Card izquierda - Formación académica */
-.formacion-card {
-  position: absolute;
-  left: 80px;
-  top: 200px;
-  width: 480px;
-  background: #4f6658;
-  color: #eaf1ec;
-  padding: 32px 34px;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  z-index: 5;
-}
-
-.formacion-card .line {
-  margin: 0;
-}
-
-.formacion-card .line strong {
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
-
-.formacion-card .line span {
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-.formacion-card .line small {
-  display: block;
-  font-size: 0.85rem;
-  opacity: 0.9;
-  margin-top: 4px;
-}
-
-.formacion-card .center {
-  text-align: center;
-}
-
-.formacion-card .divider {
-  height: 2px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  margin: 16px 0;
-}
-
-.formacion-card .footer {
-  margin-top: 20px;
-  font-size: 0.85rem;
-  text-align: center;
-  opacity: 0.9;
-  padding-top: 15px;
-  border-top: 2px solid rgba(255, 255, 255, 0.15);
-  font-style: italic;
-}
-
-/* Card derecha - Info cards (Especialización, Magíster, Seminarios) */
-.info-card.dark {
-  position: absolute;
-  right: 80px;
-  top: 200px;
-  width: 480px;
+/* CARDS */
+.formacion-card,
+.info-card {
   background: #1f2a32;
-  color: white;
-  padding: 28px;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  z-index: 5;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
 }
 
-.info-card.dark .buttons-container {
+/* TABS */
+.tabs {
   display: flex;
-  gap: 12px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.info-card.dark button {
+.tabs button {
   background: #2d3740;
-  color: white;
   border: none;
-  padding: 10px 18px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border-radius: 4px;
+  color: white;
+  padding: 8px 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
 }
 
-.info-card.dark button:hover {
+.tabs button:hover {
   background: #4f6b5b;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(79, 107, 91, 0.3);
 }
 
-.info-card.dark button.active {
-  background: #4f6b5b;
-  border-color: #6b8f7c;
-}
-
-/* Contenido de las tabs */
+/* CONTENIDO */
 .info-content {
-  margin-top: 20px;
-  animation: fadeIn 0.3s ease;
+  text-align: center;
 }
+
 .info-content img {
-  width: 60%;
-  height: 60%;
-  margin-left: 20%;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  width: 120px;
+  margin-bottom: 15px;
 }
 
-.info-content h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.info-content h4 {
-  margin: 20px 0 10px 0;
-  font-size: 1.1rem;
-  color: #ddd;
-  font-weight: 500;
-}
-
-.info-content .institution {
-  font-weight: 600;
-  margin: 5px 0;
-  color: #a8c9b8;
-  font-size: 0.95rem;
-}
-
-.info-content .period {
-  color: #aaa;
-  font-size: 0.85rem;
-  margin-bottom: 10px;
-}
-
-.info-content .note {
-  color: #ffd700;
-  font-style: italic;
-  margin-top: 5px;
-  font-size: 0.9rem;
-}
-
+/* LISTA */
 .info-content ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .info-content li {
-  margin: 12px 0;
-  padding: 12px 15px;
   background: #2a353f;
-  border-radius: 6px;
-  border-left: 3px solid #4f6b5b;
-  transition: all 0.2s ease;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-.info-content li:hover {
-  background: #2f3c47;
-  transform: translateX(5px);
+/* BOTONES */
+.info-content button {
+  margin-top: 15px;
+  background: #4f6b5b;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
 }
 
-.info-content li strong {
-  color: #fff;
-  display: block;
-  margin-bottom: 5px;
-  font-size: 0.95rem;
-}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .formacion-layout {
+    grid-template-columns: 1fr;
+  }
 
-.info-content li p {
-  color: #ccc;
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  .sobre-mi-card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
-/* Vista de diplomas */
+/* CONTENEDOR PRINCIPAL */
 .diplomas-view {
   position: fixed;
   inset: 0;
-  background: rgba(15, 30, 38, 0.98);
+  background: linear-gradient(135deg, #0f1e26, #1a2f3f);
   color: white;
-  padding: 60px;
   z-index: 1000;
-  overflow-y: auto;
-  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 40px;
+  overflow: hidden;
 }
 
+/* BOTÓN VOLVER */
 .back-btn {
-  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 30px;
+  left: 40px;
+
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  font-size: 1rem;
-  padding: 10px 20px;
+
+  padding: 10px 18px;
+  border-radius: 6px;
   cursor: pointer;
-  margin-bottom: 40px;
-  border-radius: 4px;
+
+  font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
@@ -274,160 +164,80 @@
   transform: translateX(-5px);
 }
 
+/* TÍTULO */
+.diplomas-view h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+/* =========================
+   GRID PROFESIONAL MÁS GRANDE
+   ========================= */
 .diplomas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(680px, 520px));
+  gap: 40px;
+
   justify-content: center;
-  max-width: 1400px;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* =========================
+   1 SOLO DIPLOMA (GRANDE Y PRO)
+   ========================= */
+.diplomas-grid img:only-child {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   EXACTAMENTE 2 DIPLOMAS
+   ========================= */
+.diplomas-grid:has(img:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1100px;
+}
+
+/* =========================
+   TARJETAS
+   ========================= */
 .diplomas-grid img {
-  width: 75%;
-  height: 98%;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
   transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+/* =========================
+   HOVER MÁS FINO
+   ========================= */
 .diplomas-grid img:hover {
-  transform: scale(1.02);
+  transform: scale(4.06);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
   border-color: #4f6b5b;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-  transform: translateX(50%);
-  width: 90%;
 }
 
-/* Media queries para responsividad */
-@media (max-width: 1400px) {
-  .formacion-card {
-    width: 400px;
-    left: 40px;
-  }
-
-  .info-card.dark {
-    width: 400px;
-    right: 40px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .formacion-main {
-    padding: 40px;
-  }
-
-  .formacion-card,
-  .info-card.dark {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .circle-button {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    margin: 30px auto;
-  }
-
-  .circle-button:hover {
-    transform: scale(1.05);
-  }
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .formacion-main {
-    padding: 30px 20px;
-  }
-
-  .formacion-main h1 {
-    font-size: 2.2rem;
-    padding: 16px 22px;
-    margin-bottom: 40px;
-  }
-
-  .circle-button {
-    width: 120px;
-    height: 120px;
-    font-size: 0.85rem;
-    margin: 20px auto;
-  }
-
-  .formacion-card,
-  .info-card.dark {
-    position: relative;
-    width: 100%;
-    left: auto;
-    right: auto;
-    top: auto;
-    margin: 20px 0;
-    padding: 24px;
-  }
-
-  .info-content img {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .diplomas-view {
-    padding: 30px 20px;
-  }
-
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
   .diplomas-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
-  .diplomas-grid img {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  .formacion-main {
-    padding: 40px 40px;
-  }
-
-  .formacion-main h1 {
-    font-size: 2.8rem;
-  }
-
-  .circle-button {
-    width: 140px;
-    height: 140px;
-    font-size: 0.95rem;
-  }
-
-  .formacion-card,
-  .info-card.dark {
-    position: relative;
-    width: 100%;
-    margin: 25px 0;
-  }
-
-  .info-content img {
-    width: 80%;
-    margin-left: 10%;
-  }
-
-  .diplomas-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1025px) and (max-width: 1366px) and (orientation: portrait) {
-  .formacion-main h1 {
-    font-size: 3rem;
-  }
-
-  .formacion-card {
-    width: 90%;
-  }
-
-  .info-card.dark {
-    width: 90%;
+  .diplomas-grid img:only-child {
+    max-width: 100%;
   }
 }

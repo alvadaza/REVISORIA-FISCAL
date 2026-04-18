@@ -5,10 +5,6 @@ import "./Formacion.css";
 export default function MainView({ goTo }) {
   const [activeTab, setActiveTab] = useState("especializacion");
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
-
   return (
     <motion.section
       className="formacion-main"
@@ -18,159 +14,129 @@ export default function MainView({ goTo }) {
     >
       <h1>Formación Académica</h1>
 
-      {/* Botón central */}
+      {/* SOBRE MÍ */}
+      <motion.div
+        className="sobre-mi-card"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <img
+          src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png"
+          alt="perfil"
+          className="perfil-img"
+        />
+
+        <div>
+          <h2>Sobre mí</h2>
+          <p>
+            Profesional en Contaduría Pública con amplia experiencia en
+            revisoría fiscal, auditoría y control financiero en propiedad
+            horizontal.
+          </p>
+          <p>
+            Enfoque ético, analítico y orientado a la transparencia,
+            garantizando el cumplimiento normativo y la confianza en la gestión.
+          </p>
+        </div>
+      </motion.div>
+
+      {/* BOTÓN */}
       <motion.button
         className="circle-button"
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.05 }}
         onClick={() => goTo("contador")}
       >
         Contador Público
       </motion.button>
 
-      {/* Card texto */}
-      <div className="formacion-card">
-        <p className="line strong">
-          Instituto Técnico Industrial Piloto, <span>1986</span>
-          <br />
-          <small>Bachiller Comercial</small>
-        </p>
+      {/* GRID */}
+      <div className="formacion-layout">
+        {/* IZQUIERDA */}
+        <div className="formacion-card">
+          <p>
+            <strong>Instituto Técnico Industrial Piloto</strong>
+            <br />
+            Bachiller Comercial - 1986
+          </p>
 
-        <div className="divider" />
+          <p>
+            <strong>SENA</strong>
+            <br />
+            Gerencia Estratégica - 1998
+          </p>
 
-        <p className="line center">
-          <strong>EL SERVICIO NACIONAL DE APRENDIZAJE SENA.</strong>
-          <br />
-          Mayo de 1998, Bogotá,
-          <br />
-          <small>Seminario de Gerencia Estratégica</small>
-        </p>
+          <p>
+            <strong>Universidad Antonio Nariño</strong>
+            <br />
+            Contador Público - 2000
+          </p>
 
-        <div className="divider" />
+          <p>
+            <strong>Postgrado</strong>
+            <br />
+            Negocios Internacionales - 2001
+          </p>
 
-        <p className="line">
-          <strong>UNIVERSIDAD ANTONIO NARIÑO</strong>, 1995–2000
-          <br />
-          <small>Contador Público</small>
-        </p>
+          <p>
+            <strong>Diplomado</strong>
+            <br />
+            Propiedad Horizontal - 2007
+          </p>
+        </div>
 
-        <div className="divider" />
-
-        <p className="line center">
-          <strong>UNIVERSIDAD ANTONIO NARIÑO</strong>, Enero a Junio de 2001
-          <br />
-          <small>
-            Gerencia de Negocios Internacionales – Postgrado (Un Semestre)
-          </small>
-        </p>
-
-        <div className="divider" />
-
-        <p className="line">
-          <strong>UNIVERSIDAD ANTONIO NARIÑO</strong>, Junio de 2002
-          <br />
-          <small>
-            El Comercio Electrónico como Herramienta Estratégica para la
-            Creación de Ventajas Competitivas
-          </small>
-        </p>
-
-        <div className="divider" />
-
-        <p className="line center">
-          <strong>CONSTRUCTORA BOLÍVAR</strong>, 2006–2007
-          <br />
-          <small>
-            Diplomado en Propiedad Horizontal – Premio Bolívar a la Excelencia
-            Nivel 1 y 2
-          </small>
-        </p>
-
-        <p className="footer">
-          Conocimientos administrativos, financieros, contables y de recurso
-          humano en Propiedad Horizontal, Ley 675 y Reglamentos
-        </p>
-      </div>
-
-      {/* Card con botones */}
-      <div className="info-card dark">
-        <button onClick={() => handleTabChange("especializacion")}>
-          Especialización
-        </button>
-        <button onClick={() => handleTabChange("magister")}>Magíster</button>
-        <button onClick={() => handleTabChange("seminarios")}>
-          Seminarios
-        </button>
-
-        {/* Información de Especialización */}
-        {activeTab === "especializacion" && (
-          <div className="info-content">
-            <img
-              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
-              alt="magister"
-              className="magister-imagen"
-            />
-            <h3>Especialización en Comercio Internacional</h3>
-            <p className="institution">UNIVERSIDAD SERGIO ARBOLEDA, 2013</p>
-            <p className="period">Enero a diciembre 2013</p>
-
-            <button onClick={() => goTo("especializacion")}>
-              Diploma de Especialista
+        {/* DERECHA */}
+        <div className="info-card dark">
+          <div className="tabs">
+            <button onClick={() => setActiveTab("especializacion")}>
+              Especialización
+            </button>
+            <button onClick={() => setActiveTab("magister")}>Magíster</button>
+            <button onClick={() => setActiveTab("seminarios")}>
+              Seminarios
             </button>
           </div>
-        )}
 
-        {/* Información de Magíster */}
-        {activeTab === "magister" && (
           <div className="info-content">
-            <img
-              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
-              alt="magister"
-              className="magister-imagen"
-            />
-            <h3>Magister en Comercio Internacional</h3>
-            <p className="institution">UNIVERSIDAD SERGIO ARBOLEDA, 2014</p>
-            <p className="period">Enero a diciembre 2014</p>
+            {activeTab === "especializacion" && (
+              <>
+                <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
+                <h3>Especialización en Comercio Internacional</h3>
+                <p>Universidad Sergio Arboleda - 2013</p>
 
-            <h3>Master of Business Administration (MBA)</h3>
-            <p className="institution">
-              UNIVERSIDAD SERGIO ARBOLEDA - UNIVERSIDAD DEL NORTE DE ILLINOIS
-              CHICAGO, 2015
-            </p>
-            <p className="period">Enero a diciembre 2015</p>
-            <p className="note">Doble Titulación</p>
-            <button onClick={() => goTo("magister")}>
-              Diploma de Magíster
-            </button>
-          </div>
-        )}
+                <button onClick={() => goTo("especializacion")}>
+                  Ver diploma
+                </button>
+              </>
+            )}
 
-        {/* Información de Seminarios */}
-        {activeTab === "seminarios" && (
-          <div className="info-content">
-            <img
-              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg"
-              alt="magister"
-              className="magister-imagen"
-            />
-            <h3>Seminarios</h3>
-            <ul>
-              <li>
-                <strong>Seminario Negocios en China</strong>
-                <p>ESEUNE BUSINESS SCHOOL, 2014</p>
-              </li>
-              <li>
-                <strong>
-                  Seminario Taller de Adopción Primera Vez de las NIC, NIIF
-                  (IFRS)
-                </strong>
-                <p>C&A, CONSULTORIAS Y AUDITORIAS - 21 de noviembre de 2013</p>
-              </li>
-            </ul>
-            <button onClick={() => goTo("seminarios")}>
-              Diploma de Seminarios
-            </button>
+            {activeTab === "magister" && (
+              <>
+                <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
+                <h3>Magíster en Comercio Internacional</h3>
+                <p>2014</p>
+
+                <h3>MBA</h3>
+                <p>2015 - Doble titulación</p>
+
+                <button onClick={() => goTo("magister")}>Ver diploma</button>
+              </>
+            )}
+
+            {activeTab === "seminarios" && (
+              <>
+                <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
+                <h3>Seminarios</h3>
+
+                <ul>
+                  <li>Negocios en China</li>
+                  <li>NIIF - IFRS</li>
+                </ul>
+
+                <button onClick={() => goTo("seminarios")}>Ver diplomas</button>
+              </>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </motion.section>
   );

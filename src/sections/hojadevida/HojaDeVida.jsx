@@ -133,13 +133,12 @@ export default function HojaDeVida() {
             })
           }
         >
-          <img src="/image/perfil_zarate.png" alt="Perfil" />
+          <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772469572/zarate/perfil_zarate_cmbnf7.png" />
           <div>
             <h3>SOBRE MÍ</h3>
             <p className="resumen">
-              Profesional con amplia experiencia como Revisor Fiscal en
-              Propiedad Horizontal (Ley 675), Contador Público, Auditor y
-              Asesor...
+              Profesional con mas de 21 años de experiencia como Revisor Fiscal
+              en Propiedad Horizontal (Ley 675),
             </p>
           </div>
         </motion.div>

@@ -14,21 +14,11 @@ const media = [
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580687/zarate/OBRA2_tjvhsl.png",
   },
   // { id: 3, tipo: "video", src: "/video/obra1.mp4" },
-  {
-    id: 4,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580431/zarate/OBRA4_ghwomr.png",
-  },
   // { id: 5, tipo: "video", src: "/video/obra2.mp4" },
   {
     id: 5,
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580636/zarate/OBRA5_lgw3r1.png",
-  },
-  {
-    id: 6,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580432/zarate/OBRA6_yp35b3.png",
   },
   {
     id: 7,
@@ -40,11 +30,7 @@ const media = [
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA8_g6uyjo.png",
   },
-  {
-    id: 9,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA9_ozfxqw.png",
-  },
+
   {
     id: 10,
     tipo: "img",
@@ -56,24 +42,14 @@ const media = [
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580434/zarate/OBRA11_h7lorl.png",
   },
   {
-    id: 12,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580429/zarate/OBRA12_zbasu8.png",
-  },
-  {
-    id: 13,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA13_aapauu.png",
-  },
-  {
-    id: 14,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA14_orj4qr.png",
-  },
-  {
     id: 15,
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA15_samyhk.png",
+  },
+  {
+    id: 16,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1776464161/zarate/antes_uy_despues_r9o3qc.png",
   },
 ];
 
