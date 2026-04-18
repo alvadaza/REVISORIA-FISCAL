@@ -27,8 +27,8 @@ const items = [
     angle: 120,
   },
   {
-    id: "hojadevida",
-    label: "Hoja de Vida",
+    id: "EsperienciaLaboral",
+    label: "Experiencia Laboral",
     icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508510/zarate/hoja-vida_bcfjs1.png",
     angle: 60,
   },
