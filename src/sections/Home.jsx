@@ -7,6 +7,7 @@ export default function Home({ onSelect }) {
   const [tituloPrincipal, setTituloPrincipal] = useState("Cargando...");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchTitulo = async () => {
       try {
@@ -21,12 +22,12 @@ export default function Home({ onSelect }) {
         if (data && data.valor) {
           setTituloPrincipal(data.valor);
         } else {
-          setTituloPrincipal("CONJUNTO BALCONES DE PROVENZA"); // fallback
+          setTituloPrincipal("Hector Zarate"); // fallback
         }
       } catch (err) {
         console.error("Error al cargar título:", err);
         setError(err.message);
-        setTituloPrincipal("CONJUNTO BALCONES DE PROVENZA"); // fallback
+        setTituloPrincipal("Hector Zarate"); // fallback
       } finally {
         setLoading(false);
       }
