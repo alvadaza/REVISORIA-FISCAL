@@ -5,7 +5,7 @@ import "./Revisoria.css";
 const services = [
   {
     id: "revisor-fiscal",
-    title: "REVISOR FISCAL",
+    title: "FUNCIONES DEL REVISOR FISCAL",
     image:
       "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580305/zarate/revisoriafiscal_qvmfzj.jpg",
 
@@ -55,8 +55,15 @@ export default function Revisoria() {
         transition={{ duration: 0.8 }}
         className="revisoria-header"
       >
-        <h1>REVISORÍA FISCAL</h1>
-        <p>Control, transparencia y confianza empresarial</p>
+        <h1>PROPUESTA DE VALOR</h1>
+        <h2>
+          “Se basa en tres pilares: control, prevención y confianza. No me
+          limito a revisar cifras; analizo la gestión, identifico riesgos antes
+          de que ocurran y entrego información clara para que la copropiedad
+          tome mejores decisiones. Más que un revisor fiscal, soy un aliado que
+          protege el patrimonio de los copropietarios y fortalece la
+          administración.”
+        </h2>
       </motion.header>
 
       {/* GRID */}
@@ -103,7 +110,7 @@ export default function Revisoria() {
                 {active.description && <p>{active.description}</p>}
 
                 {active.items && (
-                  <ul>
+                  <ul CLASSNAME="item-list">
                     {active.items.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}

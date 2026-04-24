@@ -1,13 +1,20 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./SeguimientoObras.css";
+import Revisoria from "./Revisoria";
 
 const media = [
+  {
+    id: 3,
+    tipo: "img",
+    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA15_samyhk.png",
+  },
   {
     id: 1,
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580686/zarate/OBRA1_mmpgy5.png",
   },
+
   {
     id: 2,
     tipo: "img",
@@ -20,11 +27,7 @@ const media = [
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580636/zarate/OBRA5_lgw3r1.png",
   },
-  {
-    id: 7,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580432/zarate/OBRA7_hw497y.png",
-  },
+
   {
     id: 8,
     tipo: "img",
@@ -36,16 +39,7 @@ const media = [
     tipo: "img",
     src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580433/zarate/OBRA10_g8onpe.png",
   },
-  {
-    id: 11,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580434/zarate/OBRA11_h7lorl.png",
-  },
-  {
-    id: 15,
-    tipo: "img",
-    src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772580430/zarate/OBRA15_samyhk.png",
-  },
+
   {
     id: 16,
     tipo: "img",
@@ -58,6 +52,7 @@ export default function SeguimientoObras() {
 
   return (
     <section className="obras-container">
+      <Revisoria />
       <h1 className="obras-title">Seguimiento de Obras</h1>
 
       {/* MOSAICO */}

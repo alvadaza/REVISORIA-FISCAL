@@ -52,7 +52,7 @@
 
 .obra-item img,
 .obra-item video {
-  width: 100%;
+  width: 120%;
   display: block;
   object-fit: cover;
 }
@@ -94,13 +94,6 @@
   box-shadow: var(--shadow);
   cursor: pointer;
   transition: var(--transition);
-}
-
-.obra-item img,
-.obra-item video {
-  width: 100%;
-  display: block;
-  object-fit: cover;
 }
 
 /* =========================

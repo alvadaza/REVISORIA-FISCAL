@@ -4,39 +4,34 @@ import { useState, useEffect } from "react";
 const items = [
   {
     id: "formacion",
-    label: "2-Formación",
+    label: "1-Estudios",
     icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508696/zarate/certificate-concept_nqhjts.png",
-    angle: 300,
-  },
-  {
-    id: "revisoria",
-    label: "1- Revisoría",
-    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508660/zarate/revisoria_jn0kxl.png",
-    angle: 240,
-  },
-  {
-    id: "auditoria",
-    label: "3- Auditoría",
-    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508617/zarate/auditoria_awozlw.png",
-    angle: 180,
-  },
-  {
-    id: "seguimientoObra",
-    label: "5-Seguimiento de Obra",
-    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508569/zarate/avance-de-obra-1024x1024_faqgxf.png",
-    angle: 120,
+    angle: 288,
   },
   {
     id: "hojadevida",
-    label: "4- Experiencia Laboral",
+    label: "2- Experiencia Revisoria",
     icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508510/zarate/hoja-vida_bcfjs1.png",
-    angle: 60,
+    angle: 0,
+  },
+  {
+    id: "auditoria",
+    label: "3- Normas Internacionales",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508617/zarate/auditoria_awozlw.png",
+    angle: 72,
+  },
+
+  {
+    id: "seguimientoObra",
+    label: "4-Propuesta de Valor",
+    icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508569/zarate/avance-de-obra-1024x1024_faqgxf.png",
+    angle: 144,
   },
   {
     id: "certificados-ia",
-    label: "6- Certificaciones-IAS",
+    label: "5- Certificaciones adicionales",
     icon: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1772508410/zarate/IAS_gfndjy.jpg",
-    angle: 0,
+    angle: 216,
   },
 ];
 

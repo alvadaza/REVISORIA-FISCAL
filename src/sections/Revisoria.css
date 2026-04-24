@@ -17,9 +17,20 @@
   margin-top: 70px;
 }
 
+.revisoria-header h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white;
+  padding: 1px 22px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 0px;
+  text-align: justify;
+}
 .revisoria-header p {
   margin-top: -15px;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   opacity: 0.9;
 }
 
@@ -69,7 +80,7 @@
 
 .card-overlay h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 .revisoria-overlay {
@@ -100,6 +111,8 @@
 }
 .revisoria-full .content {
   padding: 40px;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 .revisoria-full h2 {
@@ -109,6 +122,8 @@
 
 .revisoria-full ul {
   padding-left: 20px;
+  font-size: 1.25rem;
+  text-align: JUSTIFY;
 }
 
 .revisoria-full li {
