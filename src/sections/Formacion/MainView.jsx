@@ -116,11 +116,9 @@ export default function MainView({ goTo }) {
             {activeTab === "magister" && (
               <>
                 <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
-                <h3>Magíster en Comercio Internacional</h3>
-                <p>2014</p>
+                <h3>Magíster en Comercio Internacional - 2014</h3>
 
-                <h3>MBA</h3>
-                <p>2015 - Doble titulación</p>
+                <h3>MBA - 2015 - Doble titulación</h3>
               </>
             )}
 
