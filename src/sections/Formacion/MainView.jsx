@@ -40,13 +40,19 @@ export default function MainView({ goTo }) {
         </div>
       </motion.div>
 
-      {/* BOTÓN */}
+      {/* BOTÓN VER TODOS */}
       <motion.button
         className="circle-button"
+        style={{
+          background: "#3a4a55",
+          borderColor: "#6b9b7f",
+          marginTop: "10px",
+          fontSize: "1.1rem",
+        }}
         whileHover={{ scale: 1.05 }}
-        onClick={() => goTo("contador")}
+        onClick={() => goTo("all")}
       >
-        Contador Público
+        Ver Todos los Diplomas
       </motion.button>
 
       {/* GRID */}
@@ -104,10 +110,6 @@ export default function MainView({ goTo }) {
                 <img src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1772543887/zarate/propuestadetrabajo_zoxxuj.jpg" />
                 <h3>Especialización en Comercio Internacional</h3>
                 <p>Universidad Sergio Arboleda - 2013</p>
-
-                <button onClick={() => goTo("especializacion")}>
-                  Ver diploma
-                </button>
               </>
             )}
 
@@ -119,8 +121,6 @@ export default function MainView({ goTo }) {
 
                 <h3>MBA</h3>
                 <p>2015 - Doble titulación</p>
-
-                <button onClick={() => goTo("magister")}>Ver diploma</button>
               </>
             )}
 
@@ -133,8 +133,6 @@ export default function MainView({ goTo }) {
                   <li>Actualización Tributaria y Software Legal</li>
                   <li>NIIF - IFRS</li>
                 </ul>
-
-                <button onClick={() => goTo("seminarios")}>Ver diplomas</button>
               </>
             )}
             {activeTab === "diplomado" && (
@@ -148,8 +146,6 @@ export default function MainView({ goTo }) {
                     Bolivar
                   </li>
                 </ul>
-
-                <button onClick={() => goTo("diplomado")}>Ver diplomas</button>
               </>
             )}
             {activeTab === "taller" && (
@@ -162,8 +158,6 @@ export default function MainView({ goTo }) {
                     Certificado de Seguridad y Salud en el Trabajo - U. San Jose
                   </li>
                 </ul>
-
-                <button onClick={() => goTo("taller")}>Ver diplomas</button>
               </>
             )}
           </div>

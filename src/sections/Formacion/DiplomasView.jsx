@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { diplomas } from "./data";
 
-export default function DiplomasView({ type, goBack }) {
+export default function AllDiplomasView({ goBack }) {
   return (
     <motion.section
       className="diplomas-view"
@@ -14,11 +14,33 @@ export default function DiplomasView({ type, goBack }) {
         ← Volver
       </button>
 
-      <h2>{type.toUpperCase()}</h2>
+      <h2>TODOS MIS DIPLOMAS Y CERTIFICADOS</h2>
 
-      <div className="diplomas-grid">
-        {diplomas[type].map((img, i) => (
-          <motion.img key={i} src={img} whileHover={{ scale: 1.05 }} />
+      <div className="all-diplomas-container">
+        {Object.entries(diplomas).map(([category, images]) => (
+          <div key={category} className="diploma-category">
+            <h3 className="category-title">
+              {category === "contador" && "Contador Público"}
+              {category === "especializacion" && "Especialización"}
+              {category === "magister" && "Magíster"}
+              {category === "seminarios" && "Seminarios y Cursos"}
+              {category === "diplomado" && "Diplomado"}
+              {category === "taller" && "Talleres y Certificados"}
+              <span className="count">({images.length})</span>
+            </h3>
+
+            <div className="diplomas-grid">
+              {images.map((img, i) => (
+                <motion.img
+                  key={i}
+                  src={img}
+                  alt={`${category} ${i + 1}`}
+                  whileHover={{ scale: 1.06 }}
+                  transition={{ duration: 0.4 }}
+                />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </motion.section>
